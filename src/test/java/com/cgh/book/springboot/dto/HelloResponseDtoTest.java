@@ -1,7 +1,7 @@
-package dto;
+package com.cgh.book.springboot.dto;
 
 import org.junit.Test;
-import web.dto.HelloResponseDto;
+import com.cgh.book.springboot.web.dto.HelloResponseDto;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

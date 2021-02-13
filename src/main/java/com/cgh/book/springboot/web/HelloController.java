@@ -1,9 +1,9 @@
-package web;
+package com.cgh.book.springboot.web;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import web.dto.HelloResponseDto;
+import com.cgh.book.springboot.web.dto.HelloResponseDto;
 
 @RestController                     //컨트롤러를 JSON을 반환하는 컨트롤러로 만들어준다.
 public class HelloController {
