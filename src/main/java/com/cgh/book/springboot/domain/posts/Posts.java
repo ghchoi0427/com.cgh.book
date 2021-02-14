@@ -1,5 +1,6 @@
 package com.cgh.book.springboot.domain.posts;
 
+import com.cgh.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 @Getter             //lombok annotation. Getter 메서드 자동생성
 @NoArgsConstructor  //lombok annotation. 필수는 아님. 기본 생성자 자동 추가
 @Entity             //JPA annotation
-public class Posts {    //실제 DB테이블과 매칭될 클래스. Entity 클래스. 이 클래스를 수정해 DB작업.
+public class Posts extends BaseTimeEntity {    //실제 DB테이블과 매칭될 클래스. Entity 클래스. 이 클래스를 수정해 DB작업.
     @Id     //해당 테이블의 PK필드
     @GeneratedValue(strategy = GenerationType.IDENTITY) //PK 생성규칙.
     private long id;
